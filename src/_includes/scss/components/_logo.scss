@@ -14,9 +14,9 @@
 		margin: 0;
 
 		&:before {
-			background: _palette(accent1, fg);
+			background: _palette(accent3, fg);
 			border-radius: _size(border-radius);
-			color: _palette(accent1, bg);
+			color: _palette(accent3, bg);
 			content: '\f06d';
 			display: inline-block;
 			font-size: 3em;

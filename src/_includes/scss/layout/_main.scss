@@ -29,7 +29,7 @@
 			.logo + h1 {
 				@include vendor('transition', 'opacity 1s ease-in-out');
 				@include vendor('transition-delay', '0.35s');
-				font-size: 1.35em;
+				font-size: 2em;
 				opacity: 1;
 			}
 		}
