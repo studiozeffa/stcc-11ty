@@ -14,7 +14,7 @@
 		max-width: calc(100% - 4em);
 
 		> header {
-			@include padding(4em, 0);
+			padding: 1em 0;
 			text-align: center;
 
 			.logo {
@@ -31,6 +31,11 @@
 				@include vendor('transition-delay', '0.35s');
 				font-size: 2em;
 				opacity: 1;
+				margin-top: 0;
+			}
+
+			+ .wrapper {
+				padding-top: 0;
 			}
 		}
 
@@ -41,16 +46,6 @@
 		@include breakpoint('<=medium') {
 			border-radius: 0;
 			max-width: 100%;
-
-			> header {
-				@include padding(5em, 0);
-			}
-		}
-
-		@include breakpoint('<=small') {
-			> header {
-				@include padding(4em, 0);
-			}
 		}
 
 		body.is-preload & {

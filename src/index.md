@@ -2,6 +2,8 @@
 layout: home
 ---
 
+![Church building from the front](/assets/img/church-exterior.jpg)
+
 Welcome to our church! We are a Church of England church in Brislington, Bristol, worshipping God and serving him in the community.
 
 We have lots of activities and worship services and welcome you to come and join in.
