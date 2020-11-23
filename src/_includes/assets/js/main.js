@@ -41,9 +41,14 @@
 
 			$main.scrollex({
 				mode:		'top',
-				top:		'40vh',
-				enter:		function() { $header.removeClass('alt'); },
-				leave:		function() { $header.addClass('alt'); $header.addClass('reveal'); }
+				top:		'10vh',
+				enter:		function() {
+					$header.removeClass('alt');
+				},
+				leave:		function() {
+					$header.addClass('alt');
+					$header.addClass('reveal');
+				}
 			});
 
 		}
