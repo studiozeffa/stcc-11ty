@@ -12,7 +12,7 @@
 		padding: 9em 0;
 		@include vendor('background-image', (
 			'linear-gradient(to top, rgba(74,74,74,0.50), rgba(74,74,74,0.50))',
-			'url("../../images/exterior.png")'
+			'url("../../assets/img/church-exterior.jpg")'
 		));
 		@include vendor('display', 'flex');
 		@include vendor('align-items', 'center');

@@ -5,13 +5,17 @@
   "main": "index.js",
   "scripts": {
     "start": "eleventy --watch --serve",
+    "build": "rimraf public/* && npm run build:sass && eleventy",
+    "build:sass": "sass --style=compressed src/_includes/scss/main.scss public/assets/css/main.css",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@11ty/eleventy": "^0.11.1"
+    "@11ty/eleventy": "^0.11.1",
+    "rimraf": "^3.0.2",
+    "sass": "^1.29.0"
   },
   "dependencies": {}
 }
