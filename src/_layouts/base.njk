@@ -1,3 +1,7 @@
+---
+title: St Christophers Church, Brislington
+---
+
 <!DOCTYPE HTML>
 <html lang="en">
   <head>
@@ -10,41 +14,41 @@
   <body class="is-preload">
 
     <!-- Header -->
-      <div id="header" class="alt">
+      <div id="header"{% if nav === 'inline' %} class="alt"{% endif %}>
         <a class="logo" href="/">St. Christophers Church Brislington</a>
         <nav id="nav">
           <ul>
-            <li class="active"><a href="/">Home</a></li>
-            <li><a href="#">Team</a></li>
-            <li>
-              <a href="#">What's On</a>
+            <li {% if page.url === '/' %} class="active"{% endif %}><a href="/">Home</a></li>
+            <li {% if page.url === '/team' %} class="active"{% endif %}><a href="/coming-soon">Team</a></li>
+            <li {% if page.url.startsWith('/whats-on') %} class="active"{% endif %}>
+              <a href="/coming-soon">What's On</a>
               <ul>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Groups</a></li>
-                <li><a href="#">Events</a></li>
+                <li><a href="/coming-soon">Services</a></li>
+                <li><a href="/coming-soon">Groups</a></li>
+                <li><a href="/coming-soon">Events</a></li>
               </ul>
             </li>
-            <li>
-              <a href="#">Mission</a>
+            <li {% if page.url.startsWith('/mission') %} class="active"{% endif %}>
+              <a href="/coming-soon">Mission</a>
               <ul>
-                <li><a href="#">Our Mission</a></li>
-                <li><a href="#">The Christian Faith</a></li>
-                <li><a href="#">Prayer</a></li>
-                <li><a href="#">The Bible</a></li>
-                <li><a href="#">What are we doing?</a></li>
+                <li><a href="/coming-soon">Our Mission</a></li>
+                <li><a href="/mission/christian-faith">The Christian Faith</a></li>
+                <li><a href="/coming-soon">Prayer</a></li>
+                <li><a href="/coming-soon">The Bible</a></li>
+                <li><a href="/coming-soon">What are we doing?</a></li>
               </ul>
             </li>
-            <li>
-              <a href="#">Venue and Hire</a>
+            <li {% if page.url.startsWith('/venue-hire') %} class="active"{% endif %}>
+              <a href="/coming-soon">Venue and Hire</a>
               <ul>
-                <li><a href="#">Weddings</a></li>
-                <li><a href="#">Baptisms</a></li>
-                <li><a href="#">Funerals</a></li>
-                <li><a href="#">Private Parties</a></li>
-                <li><a href="#">Corporate Hire</a></li>
+                <li><a href="/coming-soon">Weddings</a></li>
+                <li><a href="/coming-soon">Baptisms</a></li>
+                <li><a href="/coming-soon">Funerals</a></li>
+                <li><a href="/coming-soon">Private Parties</a></li>
+                <li><a href="/coming-soon">Corporate Hire</a></li>
               </ul>
             </li>
-            <li><a href="#">Safeguarding</a></li>
+            <li {% if page.url === '/safeguarding' %} class="active"{% endif %}><a href="/coming-soon">Safeguarding</a></li>
           </ul>
         </nav>
       </div>
