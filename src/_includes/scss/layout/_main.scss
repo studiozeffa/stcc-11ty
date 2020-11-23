@@ -14,8 +14,12 @@
 		max-width: calc(100% - 4em);
 
 		> header {
-			padding: 1em 0;
+			padding-top: 1em;
 			text-align: center;
+
+			> h1 {
+				font-size: 2em;
+			}
 
 			.logo {
 				@include vendor('transition', (
@@ -29,18 +33,17 @@
 			.logo + h1 {
 				@include vendor('transition', 'opacity 1s ease-in-out');
 				@include vendor('transition-delay', '0.35s');
-				font-size: 2em;
 				opacity: 1;
-				margin-top: 0;
+				margin: 0 0 1em 0;
 			}
 
 			+ .wrapper {
 				padding-top: 0;
 			}
-		}
 
-		> #content {
-			padding-top: 0;
+			> #content {
+				padding-top: 0;
+			}
 		}
 
 		@include breakpoint('<=medium') {

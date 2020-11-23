@@ -3,8 +3,6 @@ layout: page
 title: The Christian Faith
 ---
 
-# The Christian Faith
-
 The Christian Faith was best summed up by Jesus in the Bible (John Chapter 3 verse 16) when he said: 
 
 > For God so loved the world that he gave his one and only Son, that whoever believes in him shall not perish but have eternal life.
