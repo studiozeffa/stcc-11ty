@@ -1,5 +1,5 @@
 ---
-layout: base
+layout: home
 ---
 
 Welcome to our church! We are a Church of England church in Brislington, Bristol, worshipping God and serving him in the community.

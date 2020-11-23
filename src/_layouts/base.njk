@@ -4,7 +4,6 @@
     <title>{{ title }}</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,600,600italic" />
     <link rel="stylesheet" href="/assets/css/fontawesome-all.min.css" />
     <link rel="stylesheet" href="/assets/css/main.css" />
   </head>
@@ -52,20 +51,7 @@
 
     <!-- Main -->
       <div id="main">
-
-        <!-- Header -->
-          <header>
-            <span class="logo"></span>
-            <h1>St. Christophers Church Brislington</h1>
-          </header>
-
-        <!-- Banner -->
-          <section id="content" class="wrapper">
-            {{ content | safe }}
-          </section>
-
-
-
+        {{ content | safe }}
       </div>
 
     <!-- Footer -->

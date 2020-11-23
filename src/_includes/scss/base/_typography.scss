@@ -13,10 +13,10 @@
 
 	body, input, select, textarea {
 		font-family: _font(family);
-		font-size: 14pt;
+		font-size: 16px;
 		font-weight: _font(weight);
 		line-height: 1.65;
-		letter-spacing: 0.05em;
+		letter-spacing: normal;
 
 		@include breakpoint('<=xlarge') {
 			font-size: 12pt;
