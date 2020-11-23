@@ -8,31 +8,40 @@
 
 	ul.faces {
 		@include vendor('display', 'flex');
+		@include vendor('flex-wrap', 'wrap');
+		@include vendor('justify-content', 'space-around');
 		list-style: none;
-		margin: (_size(element-margin) * 1.75) 0;
+		margin: (_size(element-margin) * 1.75) -2em;
 		padding: 0;
+		text-align: center;
 
 		&:last-child {
 			margin-bottom: _size(element-margin);
 		}
 
 		li {
-			@include vendor('flex', '1');
+			width: 50%;
 			border-style: solid;
 			border-left-width: 1px;
-			margin-left: 3em;
-			padding: 0;
-			padding-left: 3em;
+			padding: 0 2em 3em 2em;
+			position: relative;
 
-			&:first-child {
+			&:nth-child(2n + 1)	 {
 				border-left: 0;
-				margin-left: 0;
-				padding-left: 0;
+			}
+
+			h3, h4 {
+				margin: 0;
 			}
 
 			h3 {
-				font-size: 1em;
+				font-size: 1.2em;
 				font-weight: _font(weight-extrabold);
+			}
+			h4 {
+				font-size: 1.2em;
+				font-weight: _font(weight-bold);
+				margin-bottom: 1em;
 			}
 
 			.image {
@@ -40,11 +49,9 @@
 
 				img {
 					border-radius: 100%;
+					max-width: 60%;
+					margin: 0 auto;
 				}
-			}
-
-			p {
-				font-style: italic;
 			}
 
 			> :last-child {
@@ -54,12 +61,16 @@
 
 		@include breakpoint('<=medium') {
 			@include vendor('flex-direction', 'column');
+			margin-left: 0;
+			margin-right: 0;
 
 			li {
+				width: 100%;
 				border-left-width: 0;
 				border-top-width: 1px;
 				margin-left: 0;
 				padding-left: 0;
+				padding-right: 0;
 				margin-top: 3em;
 				padding-top: 3em;
 				-ms-flex: 0 1 auto;
@@ -68,6 +79,13 @@
 					border-top-width: 0;
 					margin-top: 0;
 					padding-top: 0;
+				}
+
+				.image {
+					img {
+						min-width: 160px;
+						max-width: 40%;
+					}
 				}
 			}
 		}

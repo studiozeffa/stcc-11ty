@@ -1,0 +1,79 @@
+{
+  "faces": [
+    {
+      "key": "andy",
+      "name": "Revd Dr Andy Schuman",
+      "position": "Vicar",
+      "bio": [
+        "Andy has responsibility for leading the parish in Mission and Ministry. He really enjoys working 1-1 with people as Mentor, Coach, Counsellor and Spiritual Director and loves helping people discover their God-Given Gifts and then use them.",
+        "He divides his time between being Vicar here and also working for the Deanery, as County Chaplain to the St John Ambulance for Avon, as Chaplain (Padre) of the South West Area and Knowle unit of the Sea Cadet Corps. Andy likes Board Games, very peaty South Islay Malts, running, cycling, swimming and the Outdoors."
+      ],
+      "tel": {
+        "display": "0117 909 4235",
+        "href": "+441179094235"
+      }
+    },
+    {
+      "key": "brenda",
+      "name": "Mrs Brenda Munden",
+      "position": "Licensed Lay Minister",
+      "bio": [
+        "Brenda has been a Licensed Lay Minister since 2000 and leads worship, services and has a heart for Pastoral Care prayer and Healing.",
+        "She likes singing, music and listening as well as small dogs and family."
+      ],
+      "tel": {
+        "display": "07909 696 325",
+        "href": "+447909696325"
+      }
+    },
+    {
+      "key": "kunnagh",
+      "name": "Mr Kunnagh Scott",
+      "position": "Licensed Lay Minister",
+      "bio": [
+        "Kunnagh is another of our Licensed Lay Ministers and he works for the NHS as well as serving St Christophers. ",
+        "He enjoys most aspects of worship including music and creativity and plays a large number of musical instruments from ukeleles to saxophones. In his spare time he enjoys Board Games and Bristol City. "
+      ],
+      "tel": {
+        "display": "07941 703 203",
+        "href": "+447941703203"
+      }
+    },
+    {
+      "key": "sally",
+      "name": "Mrs Sally Hunter",
+      "position": "Licensed Lay Minister",
+      "bio": [
+        "Sally works for the East Bristol Foodbank and has a passion for seeing God at work 'out there' in the community and city.",
+        "She enjoys reading, good movies and playing games, amongst other things..."
+      ]
+    },
+    {
+      "key": "richard",
+      "name": "Mr Richard Wadsworth",
+      "position": "Church Treasurer"
+    },
+    {
+      "key": "tamara",
+      "name": "Mrs Tamara Barant",
+      "position": "Children's Minister"
+    },
+    {
+      "key": "gabrielle",
+      "name": "Mrs Gabrielle Scott",
+      "position": "Church Warden",
+      "bio": [
+        "Gabe is our newest Church Warden who has thrown herself into things with energy and compassion since recently retiring after many years working at St Mary Redcliffe school.",
+        "She is keen on encouraging us to Love our Church both spiritually and practically. In her spare time she enjoys time with the family, lego, polishing brass, white water bungee jumping and spicy chinese food."
+      ]
+    },
+    {
+      "key": "alan",
+      "name": "Mr Alan Paginton",
+      "position": "Church Warden",
+      "bio": [
+        "Alan has been a faithful servant of St Christopher's for many years and helps lead a lot of our practical church business - if you have a question he is normlly a good place to start!"
+      ]
+    }
+  ]
+}

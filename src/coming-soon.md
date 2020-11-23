@@ -1,7 +1,6 @@
 ---
 layout: page
+title: Coming Soon
 ---
-
-# Coming Soon
 
 Watch this space!

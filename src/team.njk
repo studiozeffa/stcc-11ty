@@ -1,0 +1,20 @@
+---
+layout: page
+title: Meet the Team
+---
+
+<ul class="faces">
+  {% for face in faces %}
+    <li>
+      <span class="image"><img src="/assets/img/team/{{face.key}}.jpg" alt="Profile picture"></span>
+      <h3>{{ face.name }}</h3>
+      <h4>{{ face.position }}</h4>
+      {% for b in face.bio %}
+      <p>{{ b | mdi | safe }}</p>
+      {% endfor %}
+      {% if face.tel %}
+      <p>Contact: <a href="tel:{{face.tel.href}}">{{ face.tel.display }}</a></p>
+      {% endif %}
+    </li>
+  {% endfor %}
+</ul>

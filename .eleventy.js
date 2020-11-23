@@ -1,8 +1,19 @@
 const makeSassCompiler = require('./src/_includes/sass-compiler');
+const markdown = require('markdown-it')({
+  html: true
+});
 
 module.exports = function (config) {
   config.addPassthroughCopy({ 'src/_includes/assets': 'assets' });
   config.addPassthroughCopy({ 'src/_includes/images': 'images' });
+
+  config.addFilter("md", function(value) {
+    return markdown.render(value);
+  });
+
+  config.addFilter("mdi", function(value) {
+    return markdown.renderInline(value);
+  });
 
   // Run only when 11ty is in watch mode.
   if (process.argv.includes('--watch')) {
