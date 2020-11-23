@@ -18,11 +18,11 @@
 		}
 
 		li {
-			display: inline-block;
+			@include vendor('flex', '1 1 0');
 			border-style: solid;
 			border-left-width: 1px;
 			min-width: 15em;
-			padding: 0;
+			padding: 0 1em;
 
 			&:first-child {
 				border-left: 0;
@@ -32,6 +32,10 @@
 
 			h3 {
 				font-size: 0.8em;
+			}
+
+			p {
+				overflow-wrap: break-word;
 			}
 
 			> :last-child {
