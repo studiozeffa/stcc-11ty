@@ -10,6 +10,10 @@
 		@include padding(5em, 5em);
 		position: relative;
 
+		> * {
+			margin-top: 0;
+		}
+
 		&.style1 {
 			@include color(accent1);
 		}
