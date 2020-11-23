@@ -1,4 +1,4 @@
-const sassWatch = require('./src/_includes/watch-sass');
+const makeSassCompiler = require('./src/_includes/sass-compiler');
 
 module.exports = function (config) {
   config.addPassthroughCopy({ 'src/_includes/assets': 'assets' });
@@ -6,12 +6,19 @@ module.exports = function (config) {
 
   // Run only when 11ty is in watch mode.
   if (process.argv.includes('--watch')) {
-    // Watch Sass directory for updates.
-   sassWatch({
-     inputDir: './src/_includes/scss',
-     outputDir:  './public/assets/css',
-     stylesheetNames: ['main']
-   });
+    const sassCompile = makeSassCompiler({
+      inputDir: './src/_includes/scss',
+      outputDir:  './public/assets/css',
+      stylesheetNames: ['main']
+    })
+
+    config.on('beforeWatch', (changedFiles) => {
+      // changedFiles is an array of files that changed
+      // to trigger the watch/serve build
+      if(sassChanged(changedFiles)) {
+        sassCompile();
+      }
+    });
  }
 
   return {
@@ -22,4 +29,13 @@ module.exports = function (config) {
       layouts: '_layouts'
     }
   }
+}
+
+function sassChanged(changedFiles) {
+  for (const changed of changedFiles) {
+    if(changed.endsWith('.scss')) {
+      return true;
+    }
+  }
+  return false;
 }

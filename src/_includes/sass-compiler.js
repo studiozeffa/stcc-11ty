@@ -1,6 +1,5 @@
 const fs = require('fs');
 const path = require('path');
-const chokidar = require('chokidar');
 const sass = require('sass');
 
 module.exports = function({ inputDir, outputDir, stylesheetNames }) {
@@ -13,16 +12,13 @@ module.exports = function({ inputDir, outputDir, stylesheetNames }) {
   // Build CSS on startup.
   compile();
 
-  // Watch for changes to Sass directory.
-  chokidar.watch(inputDir).on('change', function(path) {
-    console.log(`SCSS file changed: ${path}`);
-    compile();
-  });
+  return compile;
 
   function compile() {
     // Compile each stylesheet in turn.
     stylesheetNames.forEach((name) => {
-      const inputFile = path.join(inputDir, `${name}.scss`);
+      const inputRelativePath = `${inputDir}${path.sep}${name}.scss`;
+      const inputFile = path.join(inputRelativePath);
       const outputFile = path.join(outputDir, `${name}.css`);
 
       // Render CSS from Sass source path.
@@ -31,7 +27,7 @@ module.exports = function({ inputDir, outputDir, stylesheetNames }) {
       // Save CSS to output path.
       fs.writeFileSync(outputFile, rendered.css.toString());
 
-      console.log(`CSS output file saved: ${outputFile} (in ${rendered.stats.duration}ms)`);
+      console.log(`Writing ${outputFile} from ${inputRelativePath} (in ${rendered.stats.duration}ms)`);
     });
   }
 }
