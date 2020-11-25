@@ -1,0 +1,32 @@
+{
+  "heading": "All of our Upcoming Services and Events are found on our [A Church near You Portal](https://www.achurchnearyou.com/church/11690/service-and-events/events-regular/).",
+  "services": [
+    {
+      "title": "Sunday Worship",
+      "time": "Every Sunday at 10:30 am for 30 minutes",
+      "content": "Our usual Sunday Morning service has been replaced for the meantime with a Sunday 'Livestream' that is a Live or as-live broadcast on our church Facebook Site.",
+      "img": {
+        "src": "/assets/img/bible.jpg",
+        "alt": "An open Bible showing The Book of Psalms"
+      }
+    },
+    {
+      "title": "Tuesday Morning Reflection",
+      "time": "Every Tuesday at 9am for 15 minutes",
+      "content": "A short meditation or reflection.",
+      "img": {
+        "src": "/assets/img/candle.jpg",
+        "alt": "A candle being held"
+      }
+    },
+    {
+      "title": "Compline",
+      "time": "Every Thursday at 9pm for 20 minutes",
+      "content": "A short and peaceful service of Night Prayer",
+      "img": {
+        "src": "/assets/img/morning.jpg",
+        "alt": "Blurry picture of sunrise over grassy field"
+      }
+    }
+  ]
+}

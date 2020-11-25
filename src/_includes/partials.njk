@@ -1,0 +1,10 @@
+{% macro media(props, reverse = false) %}
+<section class="media {{ 'media--reverse' if reverse }}">
+  <img class="media__image" src="{{ props.img.src }}" alt="{{ props.img.alt }}" >
+  <div class="media__body">
+    <h3>{{ props.title }}</h3>
+    <h4>{{ props.time }}</h4>
+    {{ props.content | md | safe }}
+  </div>
+</section>
+{% endmacro %}

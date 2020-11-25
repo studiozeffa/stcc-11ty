@@ -1,0 +1,47 @@
+.media {
+  @include vendor('display', 'flex');
+  @include vendor('align-items', 'flex-start');
+  margin: 2em 0;
+
+  &__image {
+    margin: 0 2em 0 0;
+    display: block;
+    width: 33%;
+    height: auto;
+  }
+
+  &__body {
+    @include vendor('flex', '1');
+    > :first-child {
+      margin-top: 0;
+    }
+    > :last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.media--reverse > .media__image {
+  order: 1;
+  margin: 0 0 0 2em;
+}
+
+@include breakpoint('<=small') {
+  .media {
+    display: block;
+
+    &__image {
+      margin: 0 0 2em 0;
+      width: 100%;
+      max-width: 80%;
+    }
+  }
+}
+
+@include breakpoint('<=xsmall') {
+  .media {
+    &__image {
+      max-width: 100%;
+    }
+  }
+}

@@ -1,0 +1,12 @@
+---
+layout: page
+title: Services
+---
+
+{% from "partials.njk" import media %}
+
+{{ heading | md | safe }}
+
+{% for service in services %}
+  {{ media(service) }}
+{% endfor %}
