@@ -4,10 +4,11 @@
   margin: 2em 0;
 
   &__image {
-    margin: 0 2em 0 0;
+    margin: 0.4em 2em 0 0;
     display: block;
     width: 33%;
     height: auto;
+    border-radius: 4px;
   }
 
   &__body {
@@ -17,6 +18,22 @@
     }
     > :last-child {
       margin-bottom: 0;
+    }
+
+    &__header {
+      margin-bottom: 0.7em;
+      h3 {
+				font-size: 1.3em;
+        font-weight: _font(weight-extrabold);
+        margin-bottom: 0.2em;
+			}
+			h4 {
+				font-size: 1.1em;
+				font-weight: _font(weight);
+			}
+      > * {
+        margin: 0;
+      }
     }
   }
 }
@@ -29,17 +46,34 @@
 @include breakpoint('<=small') {
   .media {
     display: block;
+    width: 80%;
+    margin: 2em auto;
+
+    &__body__header {
+      text-align: center;
+    }
 
     &__image {
-      margin: 0 0 2em 0;
+      margin: 0 0 1em 0;
       width: 100%;
-      max-width: 80%;
     }
+  }
+}
+
+@media(max-width: 520px) {
+  .media {
+    width: 90%;
   }
 }
 
 @include breakpoint('<=xsmall') {
   .media {
+    width: 100%;
+
+    &__body__header {
+      text-align: left;
+    }
+
     &__image {
       max-width: 100%;
     }

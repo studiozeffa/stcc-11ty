@@ -13,7 +13,6 @@
 		list-style: none;
 		margin: (_size(element-margin) * 1.75) -2em;
 		padding: 0;
-		text-align: center;
 
 		&:last-child {
 			margin-bottom: _size(element-margin);
@@ -32,6 +31,7 @@
 
 			h3, h4 {
 				margin: 0;
+				text-align: center;
 			}
 
 			h3 {
@@ -39,7 +39,7 @@
 				font-weight: _font(weight-extrabold);
 			}
 			h4 {
-				font-size: 1.2em;
+				font-size: 1.1em;
 				font-weight: _font(weight-bold);
 				margin-bottom: 1em;
 			}
