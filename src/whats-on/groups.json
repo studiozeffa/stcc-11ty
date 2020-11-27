@@ -1,0 +1,49 @@
+{
+  "heading": "We always have a lot going on with a variety of groups that either meet at church, or we have connections with.",
+  "list": [
+    {
+      "title": "Tots Time",
+      "time": "Mondays & Fridays during term time, 09:30am to 11:30am",
+      "content": "Tots Time run two popular groups on a Monday and a Friday, for children under school age, and their parents or carers.\n\nThe friendly groups run in term time from 9.30am to 11.30am and there is a waiting list in operation.\n\nFor further information or to put your name on the waiting list please phone Alison or Alan on 0117 9772016 or email alan_paginton@sky.com",
+      "img": {
+        "src": "/assets/img/groups/tots-time.jpg",
+        "alt": "A toddler with painted hands and face"
+      }
+    },
+    {
+      "title": "Board Game Cafe",
+      "time": "Third Sunday of the Month, 3pm to 7pm",
+      "content": "Board Game Cafe is a monthly time when we open up church to serve the gaming community in Bristol.\n\nWe usually meet on the Third Sunday of the Month between 3 and 7pm and have games for young and old, pro and novice.\n\nFor further details click here to see our website.",
+      "img": {
+        "src": "/assets/img/groups/board-game-cafe.jpg",
+        "alt": "A board game"
+      }
+    },
+    {
+      "title": "Lunch Club",
+      "time": "3rd Wednesday of the Month, 12pm",
+      "content": "Lunch club is our monthly gathering for over 55s with a good lunch and pudding and good company - part of our Mission of Hospitality.\n\nAll from the local community welcome!",
+      "img": {
+        "src": "/assets/img/groups/lunch-club.jpg",
+        "alt": "A lunch plate of roasted pork, tomatoes and asparagus"
+      }
+    },
+    {
+      "title": "Book Club",
+      "content": "We have a book group that meets peridocially at the Banco Lounge on the Wells Road to discuss a good book and enjoy a pint.",
+      "img": {
+        "src": "/assets/img/groups/book-club.jpg",
+        "alt": "Front cover of a book"
+      }
+    },
+    {
+      "title": "Sea Cadets",
+      "time": "Juniors 10-13 Mondays 7-9pm. Seniors 13-18, Mondays and Thursdays 7-9pm",
+      "content": "Meet in the Parish Monday and Thursday Evenings.\n\nContact: Commanding Officer, Vicky Cumner\n\n07783 514 914\n\nvcumner@googlemail.com",
+      "img": {
+        "src": "/assets/img/groups/sea-cadets.jpg",
+        "alt": "Sea cadets badge"
+      }
+    }
+  ]
+}

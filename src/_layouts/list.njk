@@ -1,0 +1,11 @@
+---
+layout: page
+---
+
+{% from "partials.njk" import media %}
+
+{{ heading | md | safe }}
+
+{% for item in list %}
+  {{ media(item) }}
+{% endfor %}
