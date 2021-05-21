@@ -3,9 +3,9 @@ const path = require('path');
 const sass = require('sass');
 
 module.exports = function({ inputDir, outputDir, stylesheetNames }) {
-  if (!fs.existsSync(path.dirname(outputDir))) {
-    console.log(`Creating new CSS output directory: ${path.dirname(outputDir)}/`);
-    fs.mkdirSync(path.dirname(outputDir), { recursive: true });
+  if (!fs.existsSync(path.resolve(outputDir))) {
+    console.log(`Creating new CSS output directory: ${path.resolve(outputDir)}/`);
+    fs.mkdirSync(path.resolve(outputDir), { recursive: true });
     console.log('CSS output directory created.');
   }
 
